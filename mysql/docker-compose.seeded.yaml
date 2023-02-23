@@ -9,6 +9,6 @@ services:
       MYSQL_USER: appsmith
       MYSQL_PASSWORD: appsmith
     volumes:
-      - ./seeds:/docker-entrypoint-initdb.d
+      - ./seed.sql:/docker-entrypoint-initdb.d/seed.sql:ro
     ports:
       - 3306:3306

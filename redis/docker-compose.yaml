@@ -4,7 +4,7 @@ services:
   redis:
     image: docker.io/bitnami/redis:7.0
     environment:
-      - REDIS_PASSWORD=appsmith
+      - ALLOW_EMPTY_PASSWORD=yes
       - REDIS_DISABLE_COMMANDS=FLUSHDB,FLUSHALL
     ports:
       - '6379:6379'
